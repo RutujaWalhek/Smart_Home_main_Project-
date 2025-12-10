@@ -1,37 +1,89 @@
-Smart Home Energy Consumption Analysis
+# 🔋 Smart Home Energy Consumption Analysis  
+### End-to-End Data Analytics Project using Excel, SQL, Python & Power BI
 
-Tools: Excel, SQL, Python, Power BI
-Overview
+This project analyzes the behavior of 99 smart homes based on 18,763 IoT energy events.  
+The goal is to identify energy usage patterns, reduce wastage, track appliance efficiency,  
+and build a complete data pipeline from raw data → insights → dashboard.
 
-This is an end-to-end project analyzing home energy consumption using multiple analytical tools.
-It covers cleaning, EDA, SQL analytics, abnormal detection, and dashboard creation.
-Project Structure
-Excel → Cleaning + EDA  
-SQL → Advanced queries  
-Python → Exploratory Data Analysis  
-Power BI → Interactive dashboard  
-Key Insights
+---
 
-Peak hours: 4 AM & 6 PM
+## 📁 Project Structure
+| Folder | Description |
+|--------|-------------|
+| **Excel** | Initial cleaning, formatting, validation |
+| **SQL** | 35+ analytical queries, trend analysis, pattern mining |
+| **Python** | Data preprocessing, visual EDA, anomaly detection |
+| **PowerBI** | Interactive dashboards, KPIs, DAX measures |
+| **Dataset** | Final clean dataset (CSV) |
 
-Highest consumption homes identified
+---
 
-Seasonal trends observed
+## 🎯 Key Insights
+- 18,763 events analyzed from 99 smart homes  
+- Peak usage hours: **4 AM** (wake-up) & **6 PM** (return home)  
+- Peak energy months: **January, February, December**  
+- Holidays show **30–40% higher energy usage**  
+- Most energy-consuming appliances: **Lighting, Refrigerator, Washing Machine**  
+- Most efficient appliance: **Dishwasher**  
+- Home ID **90** has maximum energy usage  
+- Home ID **88** has best efficiency score  
+- **7–10% events** = wastage (appliance ON + occupancy OFF)
 
-Device-wise consumption measured
+---
 
-Abnormal usage detection using statistical threshold
+## 🧮 SQL Analysis (35+ Queries)
+✔ Total consumption  
+✔ Home-wise usage  
+✔ Season trends  
+✔ Weekend vs weekday  
+✔ High temperature impact  
+✔ Occupancy behavior  
+✔ Appliance efficiency  
+✔ Peak hour analysis  
+✔ Abnormal usage detection  
 
-📎 Files
+Full SQL file: `SQL/smart_home_sql.sql`
 
-Excel workbook
+---
 
-SQL queries
+## 🐍 Python (Jupyter Notebook)
+- Data cleaning & preprocessing  
+- Missing value handling  
+- Outlier detection  
+- Correlation map  
+- Time-series analysis  
+- Appliance-wise comparison  
 
-Jupyter notebook
+Notebook: `Python/Home_Automation.ipynb`
 
-Power BI dashboard
+---
 
-Visuals
+## 📊 Power BI Dashboard
+### KPIs
+- Total Consumption  
+- Avg kWh per Event  
+- Peak Hour  
+- Peak Month  
+- Highest Energy Home  
 
-Documentation
+### Main Visuals
+- Hourly Trend  
+- Month Trend  
+- Appliance Usage  
+- Occupancy Behavior  
+- Holiday vs Non-Holiday  
+- Home Efficiency Score  
+
+PBIX File: `PowerBI/HA_PowerBi.pbix`
+
+---
+
+## 📌 Tech Stack
+Excel • MySQL • Python (Pandas, Matplotlib, Seaborn) • Power BI • GitHub
+
+---
+
+## 👩‍💻 Author
+**Rutuja Walhekar**  
+Entry-Level Data Analyst | SQL • Python • Power BI  
+GitHub: https://github.com/RutujaWalhek
